@@ -6,7 +6,7 @@ spec:
   regoFile: |
     package policies
     default isCompliant = false
-    violatingSeverities := []
+    violatingSeverities := ["Critical","High","UnknownSeverity"]
     ignoreCVEs := []
     
     contains(array, elem) = true {
